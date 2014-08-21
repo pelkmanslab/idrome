@@ -1,0 +1,3 @@
+[submodule "pyuniprot"]
+	path = pyuniprot
+	url = https://github.com/tlnagy/pyuniprot

@@ -16,6 +16,15 @@ This project is built on the scientific Python environment and makes heavy use o
 ```
 git clone https://github.com/pelkmanslab/idrome.git
 ```
+Next, change directories into the newly created "idrome" folder and run 
+```
+git submodule init
+```
+and then
+```
+git submodule update
+```
+to clone the necessary [submodules](http://www.git-scm.com/book/en/Git-Tools-Submodules). 
 
 ### Install Anaconda 
 The default Anaconda install includes a very large number of scientific Python packages and is very large. Miniconda, a barebones version that includes only the Python interpreter and the "conda" package, is recommended for quicker installation. Miniconda is available at <http://conda.pydata.org/miniconda.html>. The Python 3.x version is recommended, but the Python 2.7 version will also work because a virtual environment with the correct version of interpreter will be created in either case. Once Miniconda is installed, continue to the next section.

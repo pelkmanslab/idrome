@@ -38,7 +38,7 @@ Change directories into the folder where the project was cloned and run the "set
 In case the previous script did not work, the process can also be carried out manually. First, we will need to create a virtual environment (called "idrome" in this example) and populate it with the most important packages. Run the following command:
 
 ```
-conda create -n idrome python=2.7 numpy scipy pandas matplotlib ipython-notebook pip
+conda create -n idrome python=2.7 numpy scipy cython pandas matplotlib ipython-notebook pip
 ```
 Anaconda does not have binaries for all of the required packages. We will need to install the remainder via the `pip` package manager. But before we can do that, we need to actually switch into the new virtual environment. As mentioned before, this needs to be done every time you want to start the ipython notebook environment. Next, run `conda info -e` to show all environments (which are simply folders with packages). "idrome" should be in the list. Next, run:
 ```

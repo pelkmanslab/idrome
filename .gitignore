@@ -55,3 +55,7 @@ docs/_build/
 # IPython
 .ipynb_checkpoints/*
 
+# idrome specific
+human/*
+viral/*
+*.fasta

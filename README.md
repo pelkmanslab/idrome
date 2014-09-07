@@ -46,6 +46,6 @@ source activate idrome
 ```
 We are now in the virtual environment. Next, run
 ```
-pip install seaborn yahmm matplotlib-venn
+pip install seaborn yahmm matplotlib-venn ete2
 ```
 And finally we can run `ipython notebook` in the project directory to actually view all the notebooks.

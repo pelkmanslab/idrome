@@ -24,7 +24,7 @@ source activate idrome
 echo "~~~~~~~~~~~~~~~~~~~~~~~"
 echo "Installing non-conda packages via pip"
 echo "~~~~~~~~~~~~~~~~~~~~~~~"
-pip install seaborn yahmm matplotlib-venn
+pip install seaborn yahmm matplotlib-venn ete2
 
 echo ""
 echo "Done! The virtual environment 'idrome' has been successfully created."

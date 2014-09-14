@@ -9,7 +9,8 @@ It makes extensive use of [IPython notebooks](http://www.ipython.org), which are
 ## Project Structure
 
 - [Index.ipynb](Index.ipynb) contains all the information regarding the organization and structure of the code files.
-- [DATASETS.md](DATASETS.md) describes the layout of the data files
+- [RAWDATASETS.md](RAWDATASETS.md) describes the layout of the raw data files
+- [GENDATASETS.md](GENDATASETS.md) describes the layout of generated data files
 
 ## Setup
 

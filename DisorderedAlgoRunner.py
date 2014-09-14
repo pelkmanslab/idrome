@@ -205,7 +205,7 @@ def runDisorderedAnalysis(input_file, runCAST=True, runIUPred=True, forceIUPred=
             print("No cast output found. Generating...\nHold tight this can take awhile if the dataset is big...")
             sys.stdout.flush()
             try:
-                CastRunner(polyprots['Sequence'].values.tolist(), polyprots.index.values.tolist(), cast_output_file)
+                CastRunner(polyprots['SEQ'].values.tolist(), polyprots.index.values.tolist(), cast_output_file)
                 cast_results = pd.read_csv(cast_output_file, index_col=0)
                 print('CAST run complete. Loading file and processing...')
                 sys.stdout.flush()
@@ -218,7 +218,7 @@ def runDisorderedAnalysis(input_file, runCAST=True, runIUPred=True, forceIUPred=
           + '@' + tmp.shift(-4, axis=1) + ';').iloc[:, ::5].fillna('').sum(1)
         # Set blanks to null
         lcrs[lcrs.str.len() == 0] = np.nan
-        polyprots.insert(polyprots.columns.get_loc('Protein names')+1, 'LCRs', lcrs)
+        polyprots.insert(polyprots.columns.get_loc('LENGTH')+1, 'LCRs', lcrs)
 
     else:
         print('CAST output already in spreadsheet. Use forceCAST=True to force regeneration.')
@@ -243,7 +243,7 @@ def runDisorderedAnalysis(input_file, runCAST=True, runIUPred=True, forceIUPred=
             print('No iupred output found. Generating...\nHold tight this can take awhile if the dataset is big...')
             sys.stdout.flush()
             try:
-                IUPredRunner(polyprots['Sequence'].values.tolist(), polyprots.index.values.tolist(), iupred_output_file)
+                IUPredRunner(polyprots['SEQ'].values.tolist(), polyprots.index.values.tolist(), iupred_output_file)
                 print('IUPred run complete. Loading file and running thresholding...')
                 sys.stdout.flush()
                 iupred_results = pd.read_csv(iupred_output_file, index_col=0)
@@ -270,7 +270,7 @@ def runDisorderedAnalysis(input_file, runCAST=True, runIUPred=True, forceIUPred=
                 results[threshold].append(';'.join(['%s_%s'%reg for reg in pr]) if len(pr) > 0 else np.nan)
 
         disordered = pd.DataFrame(results, columns=thresholds, index=iupred_results.index)
-        disordered.columns=['Disordered Threshold: %d'%threshold for threshold in thresholds]
+        disordered.columns=['IDR%d'%threshold for threshold in thresholds]
         polyprots = polyprots.join(disordered)
 
     print('\nWriting results to file.')

@@ -11,6 +11,7 @@ It makes extensive use of [IPython notebooks](http://www.ipython.org), which are
 - [Index.ipynb](Index.ipynb) contains all the information regarding the organization and structure of the code files.
 - [RAWDATASETS.md](RAWDATASETS.md) describes the layout of the raw data files
 - [GENDATASETS.md](GENDATASETS.md) describes the layout of generated data files
+- [config.json](config.json) keeps track of important files and directories used in the project
 
 ## Setup
 

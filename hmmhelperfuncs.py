@@ -23,7 +23,7 @@ def run_HMM_viterbi_map(model, proteome, window1, window2, label):
     indices = {state.name : i for i,state in enumerate(model.states)}
 
     for index, row in proteome.iterrows():
-        seq = [char for char in row['Sequence'] if char in _aas]
+        seq = [char for char in row['SEQ'] if char in _aas]
 
         viterbi_path = model.viterbi(seq)[1]
 
@@ -52,7 +52,7 @@ def plot_HMM(model, proteome, window1, window2, label, background_label, uniprot
     
     """
     if len(seq) == 0:
-        seq = [char for char in proteome.loc[uniprot_id, 'Sequence'] if char in _aas]
+        seq = [char for char in proteome.loc[uniprot_id, 'SEQ'] if char in _aas]
     else:
         if type(seq) == str:
             seq = list(seq)

@@ -18,12 +18,12 @@ def retrieve_disordered_regions(x):
     with distinct regions separated by an underscore. NaN is returned if a 
     protein has no disordered regions longer than the threshold.
     """
-    if _pd.isnull(x['Disordered Threshold: 30']):
+    if _pd.isnull(x['IDR30']):
         return _np.nan
     
     regions = [tuple(region.split('_')) for region 
-               in x['Disordered Threshold: 30'].split(';')]
-    return '_'.join([x['Sequence'][int(i)-1:int(j)] for i,j in regions])
+               in x['IDR30'].split(';')]
+    return '_'.join([x['SEQ'][int(i)-1:int(j)] for i,j in regions])
     
 def calc_disordered_regions(limits, seq):
     """
@@ -118,7 +118,7 @@ def get_go_counts(entries, proteome):
     """
     
     """
-    go_terms = proteome.loc[entries.str.extract('([\w]+)_'), 'Gene ontology (GO)']
+    go_terms = proteome.loc[entries.str.extract('([\w]+)_'), 'GO']
     go_terms = go_terms[go_terms.notnull()].str.split('; ').tolist()
     return _counter([term for prot in go_terms for term in _np.unique(prot)])
 

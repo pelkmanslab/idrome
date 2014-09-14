@@ -1,0 +1,19 @@
+{
+    "output": {
+        "plots": "plots/"
+    }, 
+    "rawdata": {
+        "viral": "viral/human_viral_proteome_2014_08.csv", 
+        "human": "human/gw_human_proteome_2014_08.csv"
+    }, 
+    "processed": {
+        "viral": {
+            "polyprots": "viral/human_viral_proteome_2014_08_withpolyprots.csv", 
+            "idrrep": "viral/human_viral_proteome_2014_08_idrrep.csv"
+        }, 
+        "human": {
+            "sgt": "human/gw_human_proteome_2014_08_sg_targeting.csv", 
+            "idrrep": "human/gw_human_proteome_2014_08_idrrep.csv"
+        }
+    }
+}

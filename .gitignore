@@ -53,10 +53,10 @@ coverage.xml
 docs/_build/
 
 # IPython
-.ipynb_checkpoints/*
+.ipynb_checkpoints/
 
 # idrome specific
-human/*
-viral/*
-plots/*
+/human/
+/viral/
+/plots/
 *.fasta

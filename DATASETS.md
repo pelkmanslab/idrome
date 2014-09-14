@@ -9,13 +9,13 @@ The following attributes are common the both raw human and viral datasets.
 - ACCID: the protein's Uniprot Accession ID
 - ORGID: the organism's ID in Uniprot
 - PROTNAME: the protein's names and synonyms
+- LENGTH: the protein's length
 - LCR: the protein's low complexity regions as predicted by CAST. The data are stored as follows: `LCR amino acid single letter code :  start position _ end position (inclusive) $ CAST score [positions of residues belonging to LCR];` The data can be extracted easily using the following regex: `([A-Z]):([\d]+).*?_([\d]+).*?\$([\S]*)@(\[.*?\]);`, which can be used like so: `import re; re.findall(r'([A-Z]):([\d]+).*?_([\d]+).*?\$([\S]*)@(\[.*?\]);', "target")` 
 - GO: the protein's gene ontology terms separated by `; `
 - GOID: the protein's gene ontology IDs separated by `; `
 - TAXON: the organism's taxonomic information, stored in Uniprot style
 - CHAIN: descriptions of the mature polypeptides following processing
 - DOMFT: sequence position-dependent annotation (features)
-- DOMCC: sequence position-independent annotation
 - REGION: region of interest in the sequence
 - COMPBIAS: compositional bias in the sequence as reported by Uniprot
 - SEQ: the raw sequence

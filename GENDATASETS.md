@@ -4,11 +4,11 @@ There are several "datasets" that are generated from the original datasets detai
 
 ## "polyprots" viral dataset
 
-This is identical to the original raw viral dataset from Uniprot, but any protein that had CHAIN information indicating that they are cleaved during their maturation process where split into separate proteins. The LCR and IDR analysis was re-run on the full dataset. The columns are unchanged from the raw viral dataset.
+This dataset is identical to the original raw viral dataset from Uniprot, but any protein that had CHAIN information indicating that they are cleaved during their maturation process were split into separate proteins. The LCR and IDR analysis was re-run on the full dataset. The columns are unchanged from the raw viral dataset.
 
-## iddrep datasets
+## "iddrep" datasets
 
-These are IDR representation datasets, where the separate IDRs are represented as some abstraction (currently as 20D frequency vecotrs). Proteins containing multiple IDRs have multiple rows with each separate IDR having its own row. 
+These are IDR representation datasets, where the separate IDRs are represented as some abstraction (currently as 20D frequency vectors). Proteins containing multiple IDRs have multiple rows with each separate IDR having its own row. 
 
 ### Columns
 

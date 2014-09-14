@@ -4,6 +4,8 @@ This project aims to systematically analyze the functional attributes of protein
 
 It makes extensive use of [IPython notebooks](http://www.ipython.org), which are a convenient way of showing both the code and thinking process/formulas/logic that went into creating said code. The notebooks all have `.ipynb` extensions and are simply JSON files. The best way to interact with the notebooks is to setup the computing environment associated with this project and run the IPython notebook server locally. 
 
+See [USAGE.md](USAGE.md) for usage information.
+
 *Note: This code has been tested on Linux and OS X, it has not been tested on Windows. It is very likely that there will be several PATH related issues. Additionally, there is only a OS X compatible binary for CAST at the moment, which is required in the data acquisition step.*
 
 ## Project Structure

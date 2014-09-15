@@ -9,7 +9,7 @@
     "processed": {
         "viral": {
             "polyprots": "viral/human_viral_proteome_2014_08_withpolyprots.csv", 
-            "idrrep": "viral/human_viral_proteome_2014_08_idrrep.csv"
+            "idrrep": "viral/human_viral_proteome_2014_08_withpolyprots_idrrep.csv"
         }, 
         "human": {
             "sgt": "human/gw_human_proteome_2014_08_sg_targeting.csv", 

@@ -10,7 +10,7 @@ fi
 echo "~~~~~~~~~~~~~~~~~~~~~~~"
 echo "Creating new virtual environment named 'idrome'"
 echo "~~~~~~~~~~~~~~~~~~~~~~~"
-conda create -n idrome python=2.7 numpy scipy cython pandas matplotlib ipython-notebook pip --yes
+conda create -n idrome python=2.7 numpy scipy cython pandas matplotlib ipython-notebook pip pyqt --yes
 echo "Done!"
 
 echo "Switching to virtual environment."

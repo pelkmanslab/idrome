@@ -1,5 +1,8 @@
 # idrome
 
+[![BSD License](http://img.shields.io/badge/license-BSD 3--clause-blue.svg?style=flat-square)](http://opensource.org/licenses/BSD-3-Clause)
+[![Github Issues](http://img.shields.io/github/issues/badges/shields.svg?style=flat-square))](https://github.com/pelkmanslab/idrome/issues)
+
 This project aims to systematically analyze the functional attributes of proteins containing intrinsically disordered regions (IDRs) and low complexity regions (LCRs) in the human proteome and the human virus proteomes (potentially others as well).
 
 It makes extensive use of [IPython notebooks](http://www.ipython.org), which are a convenient way of showing both the code and thinking process/formulas/logic that went into creating said code. The notebooks all have `.ipynb` extensions and are simply JSON files. The best way to interact with the notebooks is to setup the computing environment associated with this project and run the IPython notebook server locally. 

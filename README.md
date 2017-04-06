@@ -23,7 +23,6 @@ This project is built on the scientific Python environment and makes heavy use o
 ```
 git clone --recursive https://github.com/pelkmanslab/idrome.git
 ```
-
 which recursively clones the project and the necessary submodules.
 
 ### Install Anaconda 
